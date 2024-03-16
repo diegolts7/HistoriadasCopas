@@ -1,0 +1,213 @@
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos para telas maiores que 480px */
+/* Aqui, os estilos padrão são aplicados para telas maiores que 480px */
+h1{
+  font-size: 18px;
+}
+header, nav, footer {
+  padding: 10px;
+}
+#rolagem{
+  position: fixed;
+  width: 100%;
+  border-radius: 20px;
+}
+header {
+  background-color: #3C614B;
+  text-align: center;
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+nav {
+  background-color: #3C614B;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  font-size: 20px;/* Cor de fundo mais clara ao passar o mouse */
+  color: #ffffff;
+  transition: .3s;/* Cor do texto ao passar o mouse */
+}
+
+main {
+  background-color: #eaeaea;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+.imagem-responsiva{
+  max-width: 100%;
+  height: auto;
+  word-wrap: break-word;
+}
+.imagem-responsiva img{
+  max-width: 100%;
+  height: auto;
+}
+.conteiner-conteudo{
+  display: flex;
+  padding: 20px;
+  
+}
+.imagens-jogadores{
+  width: 30%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.imagens-jogadores div{
+  margin:50px;
+}
+.ano{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+.elemento{
+  background-color: white;
+  width: 40%;
+  height: auto;
+  margin: 30px;
+  border-radius: 100%;
+  border: 5px solid #3C614B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ano-conteudo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.ano-conteudo >*{
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+.artilheiros{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.artilheiros div{
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  border-radius: 100%;
+  border: 5px solid #3C614B;
+}
+#artilheiro img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: white;
+}
+#artilheiro2 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: white;
+}
+#artilheiro3 img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  background: black;
+}
+
+.videoyt{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+  padding-bottom: 56.25%; 
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.videoyt iframe,  
+.videoyt object,  
+.videoyt embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.ano-conteudo{
+  width: 50%;
+}
+
+.jTitulos{
+  text-align: center;
+  margin: 80px 20px 20x 20px;
+}
+
+/* Estilos para telas menores ou iguais a 480px */
+@media (max-width: 480px) {
+  header, nav, footer {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  #rolagem{
+    position: static;
+  }
+  nav,header{
+    position: static;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  header, nav, footer {
+    padding: 10px;
+  }
+  
+}
